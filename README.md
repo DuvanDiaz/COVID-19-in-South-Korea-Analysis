@@ -1,28 +1,32 @@
-# ETL Project Report: Duvan, Shivani T. and Eline (Aug 2020) 
-- Columbia University Data Analytics Bootcamp
--------------------------------------------------------------
+# ETL preparation of database for Covid-19 in South Korea
+- Columbia University Data Analytics Bootcamp - ETL Project (August 2020) 
+- Project By: Duvan Diaz, Shivani Thakkar, Eline Van Eldere
+-------------------------------------------------------------------------------
 
-# “ETL preparation of database for Covid-19 in South Korea”
 
 # Overview
-In this project, we want to clean and prepare our data using ETL in order to find an answer to the questions stated in the Goals section. For this we will use a dataset retrieved via kaggle.com.
-It was last updated on June 30, 2020.
+In this project, we want to clean and structure our data using ETL procedure in order to find some answers and trends related to COVID-19.
+For this we are using a dataset retrieved via kaggle.com. It was for South Korea and last updated on June 30, 2020.
 Dataset URL: https://www.kaggle.com/kimjihoo/coronavirusdataset
 
-Authors: Duvan Diaz, Shivani Thakkar, Eline Van Eldere
 
 # Goals
-·       Finding appropriate data
+·       Find appropriate data
+
 ·       Create Pandas dataframes for the data
-·       Joining and cleaning dataframes in Pandas
-·       Connecting Pandas to SQL database
+
+·       Join and clean dataframes in Pandas
+
+·       Connect Pandas to SQL database
+
 ·       Load Pandas dataframes into SQL database
 
 
 # Justification of dataset used
-Our group chose this dataset because we considered this a good example of a relevant and up-to-date topic, and because we deemed it interesting to see the variations in effects and reactions to Covid-19 in South-Korea. This is a pretty complete and insightful dataset with lots of possibilities for investigation.
+Our group chose this dataset because we considered this a good example of a relevant and up-to-date topic, and we deemed it interesting to see the variations in effects and reactions to Covid-19 in South-Korea. This is a pretty complete and insightful dataset with lots of possibilities for investigation.
 The dataset comprises of data from the initial outbreak until June 30th 2020, so it gives an overview of the first 6 months of the pandemic and the responses to it in South-Korea.
-Justification of source selection within dataset
+
+### Justification of source selection within dataset
 We decided to use specific csv files from the dataset which were the most apt for what we would want to investigate. Some others we left out because their contents were outside the scope of this project.
 *       Case
 The number of cases by cause of infection and location
@@ -49,7 +53,7 @@ For the dataset to be ready for analysis, we performed actions on it in Jupyter 
 We read the CSV files into Pandas, to begin with we loaded more than we ended up using, as we wanted to have as much information as possible to start from and wanted to be able to use them if necessary. Afterwards we ended up selecting the ones we could perform the analysis on we found the most interesting.
 We started out by creating data frames in Pandas. After merging them together we selected the columns we could use in our analysis and copied those, rather than just drop them, because we would still be able to retrieve them if necessary. We replaced the ‘NAN’ values with ‘0’. Furthermore, we dropped the duplicates. We then established the connection to Postgres.
 
-The CSV file has defined each patient with a unique id which is stored in a column named ‘patient_id’. Technically, this column should have all unique values but there was one duplicate value in it. So, we checked both records which was having the same patient id. Both rows were having same values except ‘city’ value. So, we checked for the difference and those locations were almost same so we the second row a duplicate value and dropped it.
+The 'PatientInfo' CSV file has defined each patient with a unique id which is stored in a column named ‘patient_id’. Technically, this column should have all unique values but there was one duplicate value in it. So, we checked both records which was having the same patient id. Both rows were having same values except ‘city’ value. So, we checked for the difference and those locations were almost same so we considered  the second row a duplicate value and dropped it.
 
 As part of the cleanup of duplicates, we were able to see that in pandas, two rows or more are considered duplicates even if one of their values in a column may be different, they are still duplicates based on the index and other columns.
 Also, by renaming a 'start_date' column as a 'date' column, both data frames from each csv could be merged using date as the main column.
