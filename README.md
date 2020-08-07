@@ -38,12 +38,12 @@ All government policies over the last six months combined with the total cases a
 Dataset with the rate of testing and confirmed cases. Included Number of Released and Deceased patients. 
 
 CSV files we left out:
-·       SearchTrend
-·       SeoulFloating
-·       TimeProvince
-·       Weather
-·       TimeAge (derived from Patient Info)
-·       TimeGender (derived from Patient Info)
+*       SearchTrend
+*       SeoulFloating
+*       TimeProvince
+*       Weather
+*       TimeAge (derived from Patient Info)
+*       TimeGender (derived from Patient Info)
 
 
 #    I.         Data cleanup
