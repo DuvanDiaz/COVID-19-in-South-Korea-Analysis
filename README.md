@@ -24,24 +24,24 @@ Our group chose this dataset because we considered this a good example of a rele
 The dataset comprises of data from the initial outbreak until June 30th 2020, so it gives an overview of the first 6 months of the pandemic and the responses to it in South-Korea.
 Justification of source selection within dataset
 We decided to use specific csv files from the dataset which were the most apt for what we would want to investigate. Some others we left out because their contents were outside the scope of this project.
-·       Case
+*       Case
 The number of cases by cause of infection and location
-·       Regions
+*        Regions
 Cases per region, specified into population groups (i.e. schools or nursing homes)
-·       Patient Info
+*        Patient Info
 Anonymized patient information (date, status, location, gender, age, etc.)
-·       Policy
+*        Policy
 All government policies over the last six months combined with the total cases according to the date of discovery
 *        Time
 Dataset with the rate of testing and confirmed cases. Included Number of Released and Deceased patients. 
 
 CSV files we left out:
-·       SearchTrend
-·       SeoulFloating
-·       TimeProvince
-·       Weather
-·       TimeAge (derived from Patient Info)
-·       TimeGender (derived from Patient Info)
+*        SearchTrend
+*        SeoulFloating
+*        TimeProvince
+*        Weather
+*        TimeAge (derived from Patient Info)
+*        TimeGender (derived from Patient Info)
 
 
 #    I.         Data cleanup
