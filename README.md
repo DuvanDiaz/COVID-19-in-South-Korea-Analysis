@@ -1,7 +1,7 @@
-# ETL Project Report: Duvan, Shivani and Eline
-# August 2020
-# Data Engineering Bootcamp
-# Columbia University
+# ETL Project Report: Duvan, Shivani T. and Eline (Aug 2020) 
+- Columbia University Data Analytics Bootcamp
+-------------------------------------------------------------
+
 # “ETL preparation of database for Covid-19 in South Korea”
 
 # Overview
