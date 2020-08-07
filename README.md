@@ -1,6 +1,6 @@
 # ETL preparation of database for Covid-19 in South Korea
-- Columbia University Data Analytics Bootcamp - ETL Project (August 2020) 
-- Project By: Duvan Diaz, Shivani Thakkar, Eline Van Eldere
+#### Columbia University Data Analytics Bootcamp - ETL Project (August 2020) 
+#### Project By: Duvan Diaz, Shivani Thakkar, Eline Van Eldere
 -------------------------------------------------------------------------------
 
 
@@ -11,7 +11,7 @@ Dataset URL: https://www.kaggle.com/kimjihoo/coronavirusdataset
 
 
 # Goals
-·       Find appropriate data
+-      Find appropriate data
 
 ·       Create Pandas dataframes for the data
 
